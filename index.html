@@ -282,7 +282,9 @@
 </footer>
 
 <script>
-
+console.log('phone el:', document.getElementById('phone'))
+console.log('name el:', document.getElementById('name'))
+console.log('email el:', document.getElementById('email'))
 //Hamburger menu
   const btn = document.getElementById('menu-btn')
   const menu = document.getElementById('mobile-menu')
@@ -305,10 +307,10 @@
   })
 
 //akordeony w FAQ
-    document.querySelectorAll(".pyt").forEach((btn) => {
+    document.querySelectorAll(".pyt").forEach((but) => {
     btn.addEventListener("click", () => {
-      const content = btn.nextElementSibling;
-      const icon = btn.querySelector(".icon");
+      const content = but.nextElementSibling;
+      const icon = but.querySelector(".icon");
 
       content.classList.toggle("hidden");
       icon.textContent = content.classList.contains("hidden") ? "+" : "−";
@@ -350,7 +352,7 @@ function validateForm() {
   // Pobierz wartości z pól (trim() usuwa białe znaki)
   const name    = document.getElementById('name').value.trim()
   const email   = document.getElementById('email').value.trim()
-  const phone   = document.getElementById('phone').value.trim()
+  const phoneVal   = document.getElementById('phone').value.trim()
  
   // --- Walidacja imienia ---
   if (name === '') {
@@ -372,7 +374,7 @@ function validateForm() {
   }
  
   // --- Walidacja telefonu ---
-  if (phone === '') {
+  if (phoneVal === '') {
     showError('phone', 'Numer telefonu jest wymagany')
     isValid = false
   } else {
