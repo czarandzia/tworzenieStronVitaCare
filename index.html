@@ -282,14 +282,14 @@
 </footer>
 
 <script>
-console.log('phone el:', document.getElementById('phone'))
-console.log('name el:', document.getElementById('name'))
-console.log('email el:', document.getElementById('email'))
+console.log('phone el:', document.getElementById('phone'));
+console.log('name el:', document.getElementById('name'));
+console.log('email el:', document.getElementById('email'));
 //Hamburger menu
-  const btn = document.getElementById('menu-btn')
-  const menu = document.getElementById('mobile-menu')
-  const iconOpen = document.getElementById('icon-open')
-  const iconClose = document.getElementById('icon-close')
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
 
   btn.addEventListener('click', () => {
     const isOpen = !menu.classList.contains('hidden')
@@ -401,10 +401,10 @@ form.addEventListener('submit', (e) => {
       successMsg.classList.add('hidden')
     }, 5000)
   }
-})
+});
  
 // Usuń błąd gdy użytkownik zaczyna pisać w danym polu
-['name', 'email','phone'].forEach(fieldId => {
+;['name', 'email','phone'].forEach(fieldId => {
   const field = document.getElementById(fieldId)
   field.addEventListener('input', () => {
     clearError(fieldId)
