@@ -48,7 +48,7 @@
 @layer base {
   h1 {
     @apply text-h1 font-header;
-    font-size: 54px;        /* mobile */
+    font-size: 2.25em;        /* mobile */
   }
   h2 {
     @apply text-h2 font-display;
