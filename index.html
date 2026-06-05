@@ -11,7 +11,7 @@
     <header>
     <!-- logo z menu -->
     <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white backdrop-blur-sm">
-        <div class="max-w-7xl px-8 py-2 mx-auto">
+        <div class="max-w-full px-8 py-2 mx-auto">
             <div class="flex items-center justify-between h-14"> 
             <div>    
             <img class="h-10" src="./src/assets/logo VitaCare.svg" alt="VitaCare logo">
@@ -48,12 +48,12 @@
     </header>
     <main>
     <!-- hero -->
-<section class="min-h-screen bg-cover bg-no-repeat bg-center p-8 pt-30 pb-20 md:bg-contain md:bg-top-right" style="background-image:url('./src/assets/LekarzHero.webp')"
+<section class="bg-cover bg-no-repeat bg-center p-8 pt-30 pb-20 md:bg-contain md:bg-top-right" style="background-image:url('./src/assets/LekarzHero.webp')"
 >
   <div class="absolute inset-0 bg-white/70 md:hidden"></div>
     <div class="relative z-10">
 			<h1 class="mt-4"> Specjalistyczna opieka medyczna </h1>
-			<p class="mt-20 md:m-20">Konsultacje specjalistyczne i badania diagnostyczne.<br>
+			<p class="mt-20 md:mx-20 md:mt-20">Konsultacje specjalistyczne i badania diagnostyczne.<br>
                  Doświadczony zespół lekarzy — szybki dostęp do pomocy.</p>
     	    <div class="mt-20 md:m-20">
 				<a href="#umow" class="btn"> Umów wizytę </a>
@@ -63,9 +63,9 @@
 </section>
 <!-- O nas -->
  <section id="onas" class="p-8 pb-20">
-    <h2> O nas</h2>
+    <h3> O nas</h3>
     <div class="pt-4 md:flex flex-row items-center">
-    <h1 class="mb-8 md:basis-1/2">Dlaczego VitaCare?</h1>
+    <h2 class="mb-8 md:basis-1/2">Dlaczego VitaCare?</h2>
     <p class="pt-10 md:basis-1/2 md:pt-0">Zapewniamy kompleksową opiekę medyczną w jednym miejscu. Nasz zespół doświadczonych specjalistów dba o Twoje zdrowie, oferując szybkie terminy i najwyższy standard leczenia. Priorytetem jest dla nas zaufanie i szybki kontakt z pacjentem.
     </p>
     </div>
@@ -73,8 +73,8 @@
  <!-- Usługi-->
   <section id="uslugi" class="px-8 py-8">
 
-    <h2> Usługi </h2>
-    <h1> Nasza oferta </h1>
+    <h3> Usługi </h3>
+    <h2> Nasza oferta </h2>
     <div class="grid gap-6 mt-12 md:grid-cols-2 md:gap-8">
         <!-- Konsultacje specjalistyczne -->
         <div class="relative overflow-hidden rounded-3xl h-80 md:h-96">
@@ -121,49 +121,49 @@
 <!-- Nasz zespół-->
   <section id="zespol" class="px-8 py-8">
 
-    <h2> Nasz zespół </h2>
-    <h1 class="py-4"> Nasi specjaliści </h1>
+    <h3> Nasz zespół </h3>
+    <h2 class="py-4"> Nasi specjaliści </h2>
     <p class="pt-8">Doświadczeni lekarze z pasją do medycyny i indywidualnym podejściem do pacjenta.</p>
-    <div class="grid gap-6 mt-12 md:grid-cols-4 md:gap-8">
+    <div class="grid gap-6 mt-12 md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-8">
         <div>
         <img src="src\assets\kardiolog.webp" alt="kardiolog Anna Nowak" class="w-full h-120 md:h-100 object-cover rounded-2xl">
-        <h3> dr Anna Nowak</h3>
+        <h4> dr Anna Nowak</h4>
         <p class="text-gray-400">Kardiolog</p>
         </div>
         <div>
         <img src="src\assets\internista.webp" alt="internista Piotr Kowalski" class="w-full h-120 md:h-100 object-cover rounded-2xl">
-        <h3> dr Piotr Kowalski</h3>
+        <h4> dr Piotr Kowalski</h4>
         <p class="text-gray-400">Internista</p>
         </div>
         <div>
         <img src="src\assets\psychiatra.webp" alt="psychiatra Justyna Zawadzka" class="w-full h-120 md:h-100 object-cover rounded-2xl">
-        <h3> dr Justyna Zawadzka</h3>
+        <h4> dr Justyna Zawadzka</h4>
         <p class="text-gray-400">Psychiatra</p>
         </div>
         <div>
         <img src="src\assets\neurolog.webp" alt="neurolog Malwina Zapolska" class="w-full h-120 md:h-100 object-cover rounded-2xl">
-        <h3> dr Malwina Zapolska</h3>
+        <h4> dr Malwina Zapolska</h4>
         <p class="text-gray-400">Neurolog</p>
         </div>
   </div>   
   </section>
 <!-- FAQ-->
   <section id="zespol" class="px-8 py-8">
-    <h2> FAQ </h2>
-    <h1 class="py-4"> Często zadawane pytania </h1>
+    <h3> FAQ </h3>
+    <h2 class="py-4"> Często zadawane pytania </h2>
 
-  <div class="border-b">
+  <div class="border-b mx-10">
     <button class="pyt flex w-full items-center justify-between py-5">
       <span>Jak szybko mogę umówić wizytę?</span>
       <span class="icon text-2xl">+</span>
     </button>
 
-    <div class="accordion-content hidden pb-5 pl-4">
+    <div class="accordion-content hidden pb-5 pl-4 w-6xl">
       Wizytę możesz umówić przez formularz online, telefonicznie lub osobiście. Staramy się zapewnić termin w ciągu 1–3 dni roboczych.   
     </div>
   </div>
 
-  <div class="accordion border-b">
+  <div class="accordion border-b mx-10">
     <button class="pyt flex w-full items-center justify-between py-5">
       <span>Czy mogę umówić wizytę w ramach NFZ?</span>
       <span class="icon text-2xl">+</span>
@@ -174,7 +174,7 @@
     </div>
   </div>
 
-  <div class="accordion border-b">
+  <div class="accordion border-b mx-10">
     <button class="pyt flex w-full items-center justify-between py-5">
       <span>Jak otrzymam wyniki badań?</span>
       <span class="icon text-2xl">+</span>
@@ -185,7 +185,7 @@
     </div>
   </div>
 
- <div class="accordion border-b">
+ <div class="accordion border-b mx-10">
     <button class="pyt flex w-full items-center justify-between py-5">
       <span>Czy można odwołać wizytę?</span>
       <span class="icon text-2xl">+</span>
@@ -198,7 +198,7 @@
 </section>
 <!-- Umów wizytę-->
 <section id="umow">
-    <h1 class="text-center mt-12 mb-10"> Umów wizytę</h1>
+    <h2 class="text-center mt-12 mb-10"> Umów wizytę</h2>
 <form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-6 px-10" novalidate>
 
       <!-- Full Name -->
@@ -305,7 +305,7 @@
 
 //akordeony w FAQ
     document.querySelectorAll(".pyt").forEach((but) => {
-    btn.addEventListener("click", () => {
+    but.addEventListener("click", () => {
       const content = but.nextElementSibling;
       const icon = but.querySelector(".icon");
 
